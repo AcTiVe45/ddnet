@@ -48,6 +48,7 @@ void CPlayer::Reset()
 	m_SpectatorId = SPEC_FREEVIEW;
 	m_LastActionTick = Server()->Tick();
 	m_TeamChangeTick = Server()->Tick();
+	m_LastSetTeam = 0;
 	m_LastInvited = 0;
 	m_WeakHookSpawn = false;
 
@@ -304,6 +305,7 @@ void CPlayer::PostPostTick()
 		TryRespawn();
 }
 
+
 void CPlayer::Snap(int SnappingClient)
 {
 	if(!Server()->ClientIngame(m_ClientId))
@@ -324,6 +326,22 @@ void CPlayer::Snap(int SnappingClient)
 	pClientInfo->m_UseCustomColor = m_TeeInfos.m_UseCustomColor;
 	pClientInfo->m_ColorBody = m_TeeInfos.m_ColorBody;
 	pClientInfo->m_ColorFeet = m_TeeInfos.m_ColorFeet;
+
+	if(m_Rainbow)
+	{
+		int BaseColor = GameServer()->GetRainbowColor() * 0x010000;
+		int Color = 0xff32;
+
+		pClientInfo->m_UseCustomColor = 1;
+		pClientInfo->m_ColorBody = pClientInfo->m_ColorFeet = BaseColor + Color;
+	}
+	else
+	{
+		pClientInfo->m_UseCustomColor = m_TeeInfos.m_UseCustomColor;
+		pClientInfo->m_ColorBody = m_TeeInfos.m_ColorBody;
+		pClientInfo->m_ColorFeet = m_TeeInfos.m_ColorFeet;
+	}
+
 
 	int SnappingClientVersion = GameServer()->GetClientVersion(SnappingClient);
 	int Latency = SnappingClient == SERVER_DEMO_CLIENT ? m_Latency.m_Min : GameServer()->m_apPlayers[SnappingClient]->m_aCurLatency[m_ClientId];
@@ -450,6 +468,9 @@ void CPlayer::Snap(int SnappingClient)
 		pSpecChar->m_Y = m_pCharacter->Core()->m_Pos.y;
 	}
 }
+
+
+
 
 void CPlayer::FakeSnap()
 {

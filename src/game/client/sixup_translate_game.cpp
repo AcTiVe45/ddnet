@@ -70,7 +70,7 @@ void CGameClient::DoTeamChangeMessage7(const char *pName, int ClientId, int Team
 	char aBuf[128];
 	switch(GetStrTeam7(Team, m_pClient->m_TranslationContext.m_GameFlags & protocol7::GAMEFLAG_TEAMS))
 	{
-	case STR_TEAM_GAME: str_format(aBuf, sizeof(aBuf), "'%s' %sjoined the game", pName, pPrefix); break;
+	case STR_TEAM_GAME: str_format(aBuf, sizeof(aBuf), "'%s' %sjoined the game", pName, pPrefix); break; 
 	case STR_TEAM_RED: str_format(aBuf, sizeof(aBuf), "'%s' %sjoined the red team", pName, pPrefix); break;
 	case STR_TEAM_BLUE: str_format(aBuf, sizeof(aBuf), "'%s' %sjoined the blue team", pName, pPrefix); break;
 	case STR_TEAM_SPECTATORS: str_format(aBuf, sizeof(aBuf), "'%s' %sjoined the spectators", pName, pPrefix); break;

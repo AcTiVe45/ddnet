@@ -1146,6 +1146,7 @@ set(EXPECTED_DATA
   countryflags/AL.png
   countryflags/AM.png
   countryflags/AO.png
+  countryflags/AQ.png
   countryflags/AR.png
   countryflags/AS.png
   countryflags/AT.png
@@ -2701,6 +2702,8 @@ if(SERVER)
   set_src(GAME_SERVER GLOB_RECURSE src/game/server
     ddracechat.cpp
     ddracecommands.cpp
+    entities/LaserCrown.cpp
+    entities/LaserCrown.h
     entities/character.cpp
     entities/character.h
     entities/door.cpp
@@ -2731,8 +2734,8 @@ if(SERVER)
     gamecontroller.h
     gamemodes/DDRace.cpp
     gamemodes/DDRace.h
-    gamemodes/mod.cpp
-    gamemodes/mod.h
+    gamemodes/BLOCK.cpp
+    gamemodes/BLOCK.h
     gameworld.cpp
     gameworld.h
     player.cpp

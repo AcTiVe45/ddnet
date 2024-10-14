@@ -1,4 +1,4 @@
-/* (c) Shereef Marzouk. See "licence DDRace.txt" and the readme.txt in the root of the distribution for more information. */
+﻿/* (c) Shereef Marzouk. See "licence DDRace.txt" and the readme.txt in the root of the distribution for more information. */
 #include "gamecontext.h"
 #include <engine/shared/config.h>
 #include <engine/shared/protocol.h>
@@ -6,12 +6,26 @@
 #include <game/server/gamemodes/DDRace.h>
 #include <game/server/teams.h>
 #include <game/version.h>
+#include <game/server/gamecontroller.h>
+#include <game/server/gameworld.h>
+#include <game/server/gamecontext.h>
+#include <game/server/player.h>
+#include <iostream>
+#include <cstdlib>
+#include <fstream>
+#include <string.h>
+#include <string>
+#include <engine/shared/netban.h>
 
 #include "entities/character.h"
 #include "player.h"
 #include "score.h"
+#include <game/server/entities/LaserCrown.h>
 
 #include <optional>
+#include <game/server/gamemodes/BLOCK.h>
+
+using namespace std;
 
 bool CheckClientId(int ClientId);
 
@@ -42,19 +56,21 @@ void CGameContext::ConCredits(IConsole::IResult *pResult, void *pUserData)
 	pSelf->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "chatresp",
 		"trafilaw, Zwelf, Patiga, Konsti, ElXreno, MikiGamer,");
 	pSelf->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "chatresp",
-		"Fireball, Banana090, axblk, yangfl, Kaffeine,");
+		"Fireball, Banana090, axblk, yangfl, Kaffeine, Zodiac,");
 	pSelf->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "chatresp",
-		"Zodiac, c0d3d3v, GiuCcc, Ravie, Robyt3, simpygirl,");
+		"c0d3d3v, GiuCcc, Ravie, Robyt3, simpygirl, sjrc6, Cellegen,");
 	pSelf->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "chatresp",
-		"sjrc6, Cellegen, srdante, Nouaa, Voxel, luk51,");
+		"srdante, Nouaa, Voxel, luk51, Vy0x2, Avolicious, louis,");
 	pSelf->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "chatresp",
-		"Vy0x2, Avolicious, louis, Marmare314, hus3h,");
+		"Marmare314, hus3h, ArijanJ, tarunsamanta2k20, Possseidon,");
 	pSelf->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "chatresp",
-		"ArijanJ, tarunsamanta2k20, Possseidon, M0REKZ,");
+		"M0REKZ, Teero, furo, dobrykafe, Moiman, JSaurusRex,");
 	pSelf->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "chatresp",
-		"Teero, furo, dobrykafe, Moiman, JSaurusRex,");
+		"Steinchen, ewancg, gerdoe-jr, BlaiZephyr, KebsCS, bencie,");
 	pSelf->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "chatresp",
-		"Steinchen, ewancg, gerdoe-jr, BlaiZephyr & others");
+		"DynamoFox, MilkeeyCat, iMilchshake, SchrodingerZhu,");
+	pSelf->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "chatresp",
+		"catseyenebulous, Rei-Tw, Matodor, Emilcha, art0007i & others");
 	pSelf->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "chatresp",
 		"Based on DDRace by the DDRace developers,");
 	pSelf->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "chatresp",
@@ -111,7 +127,7 @@ void CGameContext::ConHelp(IConsole::IResult *pResult, void *pUserData)
 	{
 		const char *pArg = pResult->GetString(0);
 		const IConsole::CCommandInfo *pCmdInfo =
-			pSelf->Console()->GetCommandInfo(pArg, CFGFLAG_SERVER, false);
+			pSelf->Console()->GetCommandInfo(pArg, CFGFLAG_SERVER | CFGFLAG_CHAT, false);
 		if(pCmdInfo)
 		{
 			if(pCmdInfo->m_pParams)
@@ -125,10 +141,11 @@ void CGameContext::ConHelp(IConsole::IResult *pResult, void *pUserData)
 				pSelf->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "chatresp", pCmdInfo->m_pHelp);
 		}
 		else
-			pSelf->Console()->Print(
-				IConsole::OUTPUT_LEVEL_STANDARD,
-				"chatresp",
-				"Command is either unknown or you have given a blank command without any parameters.");
+		{
+			char aBuf[256];
+			str_format(aBuf, sizeof(aBuf), "Unknown command %s", pArg);
+			pSelf->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "chatresp", aBuf);
+		}
 	}
 }
 
@@ -256,6 +273,342 @@ void CGameContext::ConSettings(IConsole::IResult *pResult, void *pUserData)
 		}
 	}
 }
+//Register command
+
+	void CGameContext::ConRegister(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	
+	//Here players register their accounts.
+
+		char aBuf[128];
+	str_format(aBuf,
+		sizeof(aBuf),
+		"%s  %s",
+		pResult->GetString(0), // Anv�ndarnamnet
+		pResult->GetString(1)); // L�senordet
+
+	if(str_comp(pResult->GetString(0), pResult->GetString(1)) == 0)
+	{ // Om anv�ndarnamnet �r samma som L�senordet
+
+		str_format(aBuf, sizeof(aBuf), "Cannot use same Username & Password.");
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		return;
+	}
+
+	// Kolla s� Anv�ndarnamn inte �r f�r l�ngt eller kort.
+
+	if(str_length(pResult->GetString(0)) <= 4)
+	{
+		str_format(aBuf, sizeof(aBuf), "Username can't be smaller than 5 characters.");
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		return;
+	}
+	else if(str_length(pResult->GetString(0)) >= 15)
+	{
+		str_format(aBuf, sizeof(aBuf), "Your username can't be longer than 15 characters.");
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		return;
+	}
+	// Kolla s� l�senord ox� inte �r f�r l�ngt eller kort.
+	if(str_length(pResult->GetString(1)) <= 4)
+	{
+		str_format(aBuf, sizeof(aBuf), "Your password can't be smaller than 5 characters.");
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		return;
+	}
+	else if(str_length(pResult->GetString(1)) >= 15)
+	{
+		str_format(aBuf, sizeof(aBuf), "Your password can't be longer than 15 characters.");
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		return;
+	}
+
+	str_format(aBuf, sizeof(aBuf), "./Accounts/%s.cfg", pResult->GetString(0)); // F� tag p� f�rsta texten spelaren skrivit.
+
+	ifstream fileExist;
+	fileExist.open(aBuf);
+
+	if(fileExist)
+	{
+		str_format(aBuf, sizeof(aBuf), "Account already exists."); // Om kontot redan existerar
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		return;
+	}
+
+	fileExist.close();
+
+	CPlayer *pPlayer = pSelf->m_apPlayers[pResult->m_ClientId];
+
+	ofstream file;
+
+	file.open(aBuf); // abuf = "%s.cfg" s� de blir <Vad spelaren skrivit.cfg.
+
+	if(!file)
+	{
+		str_format(aBuf, sizeof(aBuf), "Couldn't create AccountFile.");
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf); //If this happens! its a big problem.
+	}
+	file << pResult->GetString(1); // Password
+	file << '\n';
+	file << pPlayer->m_AccountData.m_BlockXp; // Level
+	file << '\n';
+	file << pPlayer->m_AccountData.m_Level; // Experience
+	file << '\n';
+	file << pPlayer->m_AccountData.m_Money;
+	file << '\n';
+
+	file.close();
+
+	str_format(aBuf, sizeof(aBuf), "Successfully created account: '%s'", pResult->GetString(0));
+	pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+
+}
+
+
+
+void CGameContext::ConLogin(IConsole::IResult *pResult, void *pUserData){
+
+	CGameContext *pSelf = (CGameContext *)pUserData;
+
+	//Here players login to their accounts.
+
+		pSelf->LoginTries++;
+
+	char aBuf[128];
+	str_format(aBuf,
+		sizeof(aBuf),
+		"%s  %s",
+		pResult->GetString(0), // Anv�ndarnamnet
+		pResult->GetString(1)); // L�senordet
+
+
+	if(pSelf->LoginTries > 4) //Banna spelare som försökt logga in för många gånger.
+	{
+		char aAddrStr[NETADDR_MAXSTRSIZE] = {0};
+		pSelf->Server()->GetClientAddr(-1, aAddrStr, sizeof(aAddrStr));
+		str_format(aBuf, sizeof(aBuf), "[10 Minutes] Too many login attempts", aAddrStr);
+		pSelf->Server()->Ban(pResult->m_ClientId, 600, aBuf, true); //10 Minuter
+		
+		if (pResult->m_ClientId && nullptr) {
+
+			char aAddrStr[NETADDR_MAXSTRSIZE] = {0};
+			pSelf->Server()->GetClientAddr(-1, aAddrStr, sizeof(aAddrStr));
+			str_format(aBuf, sizeof(aBuf), "[10 Minutes] Too many login attempts", aAddrStr);
+			pSelf->Server()->Ban(pResult->m_ClientId, 600, aBuf, true); // 10 Minuter
+
+		}
+
+		return;
+
+	}
+
+	if(str_comp(pResult->GetString(0), pResult->GetString(1)) == 0)
+	{
+		str_format(aBuf, sizeof(aBuf), "Still same username as password... Try again. '%d'", pSelf->LoginTries);
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		return;
+	}
+
+	str_format(aBuf, sizeof(aBuf), "./Accounts/%s.cfg", pResult->GetString(0)); // Få tag på första texten spelaren skrivit.
+
+	ifstream fileExist;
+	fileExist.open(aBuf);
+
+	if(!fileExist.is_open()) //Om inte filen öppnas då är de fel användarnamn oxå!
+	{
+		str_format(aBuf, sizeof(aBuf), "Wrong username or password. '%d'", pSelf->LoginTries);
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		return;
+	}
+
+	CPlayer *pPlayer = pSelf->m_apPlayers[pResult->m_ClientId]; //Tillgång till m_AccountData.BlockXP / Level
+
+
+	// checkPassword För att jämnföra med vad det är i filen redan.
+	string checkPassword;
+	getline(fileExist, checkPassword);
+
+	if(pResult->GetString(1) != checkPassword)
+	{
+		str_format(aBuf, sizeof(aBuf), "Wrong username or password. '%d'", pSelf->LoginTries);
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		return;
+	}
+	string LineReader;
+	
+	if(fileExist.is_open()) {
+	getline(fileExist, LineReader);
+	str_format(aBuf, sizeof(aBuf), "%s", pPlayer->m_AccountData.m_aUsername, pResult->GetString(0));
+	str_format(aBuf, sizeof(aBuf), "%s", pPlayer->m_AccountData.m_aPassword, pResult->GetString(1));
+	str_format(aBuf, sizeof(aBuf), "%d BlockXp", pPlayer->m_AccountData.m_BlockXp);
+	str_format(aBuf, sizeof(aBuf), "%d Level", pPlayer->m_AccountData.m_Level);
+	str_format(aBuf, sizeof(aBuf), "%d Money", pPlayer->m_AccountData.m_Money);
+	
+
+	str_format(aBuf, sizeof(aBuf), "Successfully logged into your account '%s'", pResult->GetString(0));
+	pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+
+	}
+
+	fileExist.close();
+
+
+}
+
+
+
+//Rainbow command
+void CGameContext::ConRainbow(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	if(!CheckClientId(pResult->m_ClientId))
+		return;
+
+	int ClientID = pResult->m_ClientId;
+	int idToGiveRainbow = ClientID;
+	CPlayer *pPlayer = pSelf->m_apPlayers[ClientID];
+	if(!pPlayer)
+		return;
+	char aBuf[512];
+
+	if(pSelf->Server()->GetAuthedState(ClientID) == AUTHED_NO && pPlayer)
+	{
+		pSelf->SendChatTarget(pResult->m_ClientId, "You don't have persmissions for that command.");
+		return;
+	}
+	if(pResult->NumArguments() > 0) // give other player rainbow
+	{
+		idToGiveRainbow = pSelf->IsClientPlayer(pResult->m_ClientId);
+		if(idToGiveRainbow == -1)
+
+		{
+			str_format(aBuf, sizeof(aBuf), "Cannot find player '%s'", pResult->GetString(0));
+			pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+			return;
+		}
+	}
+	CPlayer *pOtherPlayer = pSelf->m_apPlayers[idToGiveRainbow];
+	if(!pOtherPlayer)
+		return;
+	pOtherPlayer->m_Rainbow = !pOtherPlayer->m_Rainbow;
+	if(pOtherPlayer == pPlayer)
+	{
+		str_format(aBuf, sizeof(aBuf), "Successfully %s rainbow.", pOtherPlayer->m_Rainbow ? "enabled" : "disabled");
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+	}
+	else
+	{
+		str_format(aBuf, sizeof(aBuf), "Successfully %s rainbow for %s.", pOtherPlayer->m_Rainbow ? "enabled" : "disabled", pSelf->Server()->ClientName(pOtherPlayer->GetCid()));
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		str_format(aBuf, sizeof(aBuf), "Your rainbow was %s by %s.", pOtherPlayer->m_Rainbow ? "enabled" : "disabled", pSelf->Server()->ClientName(pPlayer->GetCid()));
+		pSelf->SendChatTarget(pOtherPlayer->GetCid(), aBuf);
+	}
+}
+
+//Crown command
+void CGameContext::ConCrown(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	if(!CheckClientId(pResult->m_ClientId))
+		return;
+
+	int ClientID = pResult->m_ClientId;
+	int idToGiveCrown = ClientID;
+	CPlayer *pPlayer = pSelf->m_apPlayers[ClientID];
+	if(!pPlayer)
+		return;
+	char aBuf[512];
+
+	if(pSelf->Server()->GetAuthedState(ClientID) == AUTHED_NO && pPlayer)
+	{
+		pSelf->SendChatTarget(pResult->m_ClientId, "You don't have persmissions for that command.");
+		return;
+	}
+	if(pResult->NumArguments() > 0) // give other player rainbow
+	{
+		idToGiveCrown = pSelf->IsClientPlayer(pResult->m_ClientId);
+		if(idToGiveCrown == -1)
+		{
+			str_format(aBuf, sizeof(aBuf), "Cannot find player '%s'", pResult->GetString(0));
+			pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+			return;
+		}
+	}
+	CPlayer *pOtherPlayer = pSelf->m_apPlayers[idToGiveCrown];
+	if(!pOtherPlayer)
+		return;
+	
+	if(pOtherPlayer->m_CrownObj)
+	{
+		//pOtherPlayer->m_CrownObj->Reset();
+		pOtherPlayer->m_CrownObj = nullptr;
+	}
+	
+	else
+	{
+		pOtherPlayer->m_CrownObj = new CLaserCrown(&pSelf->m_World, pOtherPlayer->GetCid());
+		// new CLaserCrown(0, 0);
+	}
+	if(pOtherPlayer == pPlayer)
+	{
+		str_format(aBuf, sizeof(aBuf), "Successfully %s Heart.", pOtherPlayer->m_CrownObj ? "enabled" : "disabled");
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+	}
+	else
+	{
+		str_format(aBuf, sizeof(aBuf), "Successfully %s Heart for %s.", pOtherPlayer->m_CrownObj ? "enabled" : "disabled", pSelf->Server()->ClientName(pOtherPlayer->GetCid()));
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		str_format(aBuf, sizeof(aBuf), "Your Heart was %s by %s.", pOtherPlayer->m_CrownObj ? "enabled" : "disabled", pSelf->Server()->ClientName(pPlayer->GetCid()));
+		pSelf->SendChatTarget(pOtherPlayer->GetCid(), aBuf);
+	}
+}
+
+void CGameContext::ConStats(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+
+		//Showing player stats
+	char aBuf[200];
+
+	CPlayer *pPlayer = pSelf->m_apPlayers[pResult->m_ClientId];
+
+
+	str_format(aBuf, sizeof(aBuf), "./Accounts/%s.cfg", pPlayer->m_AccountData.m_aUsername); // Få tag på första texten spelaren skrivit.
+
+	ifstream fileExist;
+	fileExist.open(aBuf);
+
+	std::string LineReader;
+
+	if (fileExist.is_open()) {
+
+		getline(fileExist, LineReader);
+		str_format(aBuf, sizeof(aBuf), "%s Username", pPlayer->m_AccountData.m_aUsername);
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		str_format(aBuf, sizeof(aBuf), "%s Password", pPlayer->m_AccountData.m_aPassword);
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		str_format(aBuf, sizeof(aBuf), "%d BlockXp", pPlayer->m_AccountData.m_BlockXp);
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		str_format(aBuf, sizeof(aBuf), "%d Level", pPlayer->m_AccountData.m_Level);
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		str_format(aBuf, sizeof(aBuf), "%d Money", pPlayer->m_AccountData.m_Money);
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+
+		str_format(aBuf, sizeof(aBuf), "Stats showing for : '%s'", pPlayer->m_AccountData.m_aUsername);
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+
+	}
+	else {
+		str_format(aBuf, sizeof(aBuf), "You are not logged in! Make an Account!");
+		pSelf->SendChatTarget(pResult->m_ClientId, aBuf);
+		return;
+	}
+
+	fileExist.close();
+
+}
+
 
 void CGameContext::ConRules(IConsole::IResult *pResult, void *pUserData)
 {
@@ -1999,6 +2352,46 @@ CCharacter *CGameContext::GetPracticeCharacter(IConsole::IResult *pResult)
 	return pChr;
 }
 
+void CGameContext::ConPracticeToTeleporter(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	CCharacter *pChr = pSelf->GetPracticeCharacter(pResult);
+	if(pChr)
+	{
+		if(pSelf->Collision()->TeleOuts(pResult->GetInteger(0) - 1).empty())
+		{
+			pSelf->SendChatTarget(pChr->GetPlayer()->GetCid(), "There is no teleporter with that index on the map.");
+			return;
+		}
+
+		ConToTeleporter(pResult, pUserData);
+		pChr->ResetJumps();
+		pChr->UnFreeze();
+		pChr->ResetVelocity();
+		pChr->GetPlayer()->m_LastTeleTee.Save(pChr);
+	}
+}
+
+void CGameContext::ConPracticeToCheckTeleporter(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	CCharacter *pChr = pSelf->GetPracticeCharacter(pResult);
+	if(pChr)
+	{
+		if(pSelf->Collision()->TeleCheckOuts(pResult->GetInteger(0) - 1).empty())
+		{
+			pSelf->SendChatTarget(pChr->GetPlayer()->GetCid(), "There is no checkpoint teleporter with that index on the map.");
+			return;
+		}
+
+		ConToCheckTeleporter(pResult, pUserData);
+		pChr->ResetJumps();
+		pChr->UnFreeze();
+		pChr->ResetVelocity();
+		pChr->GetPlayer()->m_LastTeleTee.Save(pChr);
+	}
+}
+
 void CGameContext::ConPracticeUnSolo(IConsole::IResult *pResult, void *pUserData)
 {
 	CGameContext *pSelf = (CGameContext *)pUserData;
@@ -2076,6 +2469,26 @@ void CGameContext::ConPracticeDeep(IConsole::IResult *pResult, void *pUserData)
 	pChr->SetDeepFrozen(true);
 }
 
+void CGameContext::ConPracticeUnLiveFreeze(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	auto *pChr = pSelf->GetPracticeCharacter(pResult);
+	if(!pChr)
+		return;
+
+	pChr->SetLiveFrozen(false);
+}
+
+void CGameContext::ConPracticeLiveFreeze(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	auto *pChr = pSelf->GetPracticeCharacter(pResult);
+	if(!pChr)
+		return;
+
+	pChr->SetLiveFrozen(true);
+}
+
 void CGameContext::ConPracticeShotgun(IConsole::IResult *pResult, void *pUserData)
 {
 	CGameContext *pSelf = (CGameContext *)pUserData;
@@ -2102,6 +2515,13 @@ void CGameContext::ConPracticeJetpack(IConsole::IResult *pResult, void *pUserDat
 	CGameContext *pSelf = (CGameContext *)pUserData;
 	if(pSelf->GetPracticeCharacter(pResult))
 		ConJetpack(pResult, pUserData);
+}
+
+void CGameContext::ConPracticeEndlessJump(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	if(pSelf->GetPracticeCharacter(pResult))
+		ConEndlessJump(pResult, pUserData);
 }
 
 void CGameContext::ConPracticeSetJumps(IConsole::IResult *pResult, void *pUserData)
@@ -2146,6 +2566,13 @@ void CGameContext::ConPracticeUnJetpack(IConsole::IResult *pResult, void *pUserD
 		ConUnJetpack(pResult, pUserData);
 }
 
+void CGameContext::ConPracticeUnEndlessJump(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	if(pSelf->GetPracticeCharacter(pResult))
+		ConUnEndlessJump(pResult, pUserData);
+}
+
 void CGameContext::ConPracticeUnWeapons(IConsole::IResult *pResult, void *pUserData)
 {
 	CGameContext *pSelf = (CGameContext *)pUserData;
@@ -2165,6 +2592,27 @@ void CGameContext::ConPracticeUnNinja(IConsole::IResult *pResult, void *pUserDat
 	CGameContext *pSelf = (CGameContext *)pUserData;
 	if(pSelf->GetPracticeCharacter(pResult))
 		ConUnNinja(pResult, pUserData);
+}
+
+void CGameContext::ConPracticeEndlessHook(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	if(pSelf->GetPracticeCharacter(pResult))
+		ConEndlessHook(pResult, pUserData);
+}
+
+void CGameContext::ConPracticeUnEndlessHook(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	if(pSelf->GetPracticeCharacter(pResult))
+		ConUnEndlessHook(pResult, pUserData);
+}
+
+void CGameContext::ConPracticeToggleInvincible(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	if(pSelf->GetPracticeCharacter(pResult))
+		ConToggleInvincible(pResult, pUserData);
 }
 
 void CGameContext::ConPracticeAddWeapon(IConsole::IResult *pResult, void *pUserData)
@@ -2259,4 +2707,13 @@ void CGameContext::ConTimeCP(IConsole::IResult *pResult, void *pUserData)
 
 	const char *pName = pResult->GetString(0);
 	pSelf->Score()->LoadPlayerTimeCp(pResult->m_ClientId, pName);
+}
+
+void CGameContext::ConTest(IConsole::IResult *pResult, void *pUserData)
+{
+	CGameContext *pSelf = (CGameContext *)pUserData;
+	
+	char aBuf[25];
+	str_format(aBuf, sizeof(aBuf), "%s", pResult);
+
 }

@@ -21,6 +21,9 @@ class IServer;
 struct CNetObj_PlayerInput;
 struct CScorePlayerResult;
 
+class CLaserCrown;
+
+
 enum
 {
 	WEAPON_GAME = -3, // team switching etc
@@ -32,12 +35,15 @@ enum
 class CPlayer
 {
 	MACRO_ALLOC_POOL_ID()
+	
 
 public:
 	CPlayer(CGameContext *pGameServer, uint32_t UniqueClientId, int ClientId, int Team);
 	~CPlayer();
 
+	
 	void Reset();
+
 
 	void TryRespawn();
 	void Respawn(bool WeakHook = false); // with WeakHook == true the character will be spawned after all calls of Tick from other Players
@@ -61,6 +67,7 @@ public:
 	void OnPredictedInput(CNetObj_PlayerInput *pNewInput);
 	void OnPredictedEarlyInput(CNetObj_PlayerInput *pNewInput);
 	void OnDisconnect();
+	void GetName(char *aBuf, int BufSize);
 
 	void KillCharacter(int Weapon = WEAPON_GAME, bool SendKillMsg = true);
 	CCharacter *GetCharacter();
@@ -73,6 +80,11 @@ public:
 	vec2 m_ViewPos;
 	int m_TuneZone;
 	int m_TuneZoneOld;
+
+	//Crown
+	CLaserCrown *m_CrownObj = 0;
+	// rainbow
+	bool m_Rainbow;
 
 	// states if the client is chatting, accessing a menu etc.
 	int m_PlayerFlags;
@@ -133,6 +145,7 @@ private:
 	CCharacter *m_pCharacter;
 	int m_NumInputs;
 	CGameContext *m_pGameServer;
+	
 
 	CGameContext *GameServer() const { return m_pGameServer; }
 	IServer *Server() const;
@@ -229,7 +242,32 @@ public:
 
 	int m_RescueMode;
 
+
 	CSaveTee m_LastTeleTee;
+
+	//strukturen av konto detaljer!
+
+	public:
+
+		struct CAccountData
+		{
+			CAccountData() {
+
+				m_aUsername[0] = '\0';
+				m_aPassword[0] = '\0';
+				m_BlockXp = 0;
+				m_Level = 0;
+				m_Money = 20;
+			}
+			char m_aUsername[128];
+			char m_aPassword[128];
+			int m_BlockXp;
+			int m_Level;
+			int m_Money;
+		
+		}; CAccountData m_AccountData;
+
+
 };
 
 #endif

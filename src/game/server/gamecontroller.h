@@ -146,6 +146,8 @@ public:
 	virtual bool CanJoinTeam(int Team, int NotThisId, char *pErrorReason, int ErrorReasonSize);
 	int ClampTeam(int Team);
 
+	//static void Com_Login(IConsole::IResult *pResult, void *pContext);
+
 	CClientMask GetMaskForPlayerWorldEvent(int Asker, int ExceptID = -1);
 
 	bool IsTeamPlay() { return m_GameFlags & GAMEFLAG_TEAMS; }

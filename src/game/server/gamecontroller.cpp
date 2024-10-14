@@ -1,4 +1,4 @@
-/* (c) Magnus Auvinen. See licence.txt in the root of the distribution for more information. */
+﻿/* (c) Magnus Auvinen. See licence.txt in the root of the distribution for more information. */
 /* If you are missing that file, acquire a complete release at teeworlds.com.                */
 #include <engine/shared/config.h>
 
@@ -7,7 +7,11 @@
 #include <game/mapitems.h>
 #include <game/server/score.h>
 #include <game/teamscore.h>
-
+#include <iostream>
+#include <string.h>
+#include <string>
+#include <fstream>
+#include <cstdlib>
 #include "gamecontext.h"
 #include "gamecontroller.h"
 #include "player.h"
@@ -19,6 +23,8 @@
 #include "entities/light.h"
 #include "entities/pickup.h"
 #include "entities/projectile.h"
+
+using namespace std;
 
 IGameController::IGameController(class CGameContext *pGameServer) :
 	m_Teams(pGameServer), m_pLoadBestTimeResult(nullptr)
@@ -389,9 +395,10 @@ bool IGameController::OnEntity(int Index, int x, int y, int Layer, int Flags, bo
 
 void IGameController::OnPlayerConnect(CPlayer *pPlayer)
 {
+	
 	int ClientId = pPlayer->GetCid();
 	pPlayer->Respawn();
-
+	
 	if(!Server()->ClientPrevIngame(ClientId))
 	{
 		char aBuf[128];
@@ -418,6 +425,7 @@ void IGameController::OnPlayerConnect(CPlayer *pPlayer)
 			Server()->SendPackMsg(&Msg, MSGFLAG_VITAL | MSGFLAG_NORECORD, ClientId);
 		}
 	}
+
 }
 
 void IGameController::OnPlayerDisconnect(class CPlayer *pPlayer, const char *pReason)
@@ -426,16 +434,21 @@ void IGameController::OnPlayerDisconnect(class CPlayer *pPlayer, const char *pRe
 	int ClientId = pPlayer->GetCid();
 	if(Server()->ClientIngame(ClientId))
 	{
+		
 		char aBuf[512];
+		/*
 		if(pReason && *pReason)
 			str_format(aBuf, sizeof(aBuf), "'%s' has left the game (%s)", Server()->ClientName(ClientId), pReason);
 		else
 			str_format(aBuf, sizeof(aBuf), "'%s' has left the game", Server()->ClientName(ClientId));
 		GameServer()->SendChat(-1, TEAM_ALL, aBuf, -1, CGameContext::FLAG_SIX);
-
+		*/
 		str_format(aBuf, sizeof(aBuf), "leave player='%d:%s'", ClientId, Server()->ClientName(ClientId));
 		GameServer()->Console()->Print(IConsole::OUTPUT_LEVEL_STANDARD, "game", aBuf);
+		
 	}
+
+
 }
 
 void IGameController::EndRound()
@@ -751,3 +764,4 @@ void IGameController::DoTeamChange(CPlayer *pPlayer, int Team, bool DoChatMsg)
 
 	// OnPlayerInfoChange(pPlayer);
 }
+

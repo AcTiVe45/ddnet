@@ -11,8 +11,8 @@
 #include <game/server/score.h>
 #include <game/version.h>
 
-#define GAME_TYPE_NAME "DDraceNetwork"
-#define TEST_TYPE_NAME "TestDDraceNetwork"
+#define GAME_TYPE_NAME "BBlock"
+#define TEST_TYPE_NAME "BBlock  race h"
 
 CGameControllerDDRace::CGameControllerDDRace(class CGameContext *pGameServer) :
 	IGameController(pGameServer)
@@ -96,7 +96,7 @@ void CGameControllerDDRace::HandleCharacterTiles(CCharacter *pChr, int MapIndex)
 	else if(((TileIndex == TILE_UNLOCK_TEAM) || (TileFIndex == TILE_UNLOCK_TEAM)) && Teams().TeamLocked(GameServer()->GetDDRaceTeam(ClientId)))
 	{
 		Teams().SetTeamLock(GameServer()->GetDDRaceTeam(ClientId), false);
-		GameServer()->SendChatTeam(GameServer()->GetDDRaceTeam(ClientId), "Your team was unlocked by an unlock team tile");
+		GameServer()->SendChatTeam(GameServer()->GetDDRaceTeam(ClientId), "Your team has been unlocked by an unlock team tile");
 	}
 
 	// solo part
@@ -131,12 +131,12 @@ void CGameControllerDDRace::OnPlayerConnect(CPlayer *pPlayer)
 
 	if(!Server()->ClientPrevIngame(ClientId))
 	{
-		char aBuf[512];
-		str_format(aBuf, sizeof(aBuf), "'%s' entered and joined the %s", Server()->ClientName(ClientId), GetTeamName(pPlayer->GetTeam()));
-		GameServer()->SendChat(-1, TEAM_ALL, aBuf, -1, CGameContext::FLAG_SIX);
+		char aBuf[500];
+		str_format(aBuf, sizeof(aBuf), "'%s' Has entered and joined the server!", Server()->ClientName(pPlayer->GetCid()));
+		GameServer()->SendChatTarget(-1, aBuf);
 
-		GameServer()->SendChatTarget(ClientId, "DDraceNetwork Mod. Version: " GAME_VERSION);
-		GameServer()->SendChatTarget(ClientId, "please visit DDNet.org or say /info and make sure to read our /rules");
+		GameServer()->SendChatTarget(ClientId, "[BBlock] - *BLOCK 4 LIFE*");
+		GameServer()->SendChatTarget(ClientId, "**Make sure to read /rules!**");
 	}
 }
 
@@ -144,6 +144,10 @@ void CGameControllerDDRace::OnPlayerDisconnect(CPlayer *pPlayer, const char *pRe
 {
 	int ClientId = pPlayer->GetCid();
 	bool WasModerator = pPlayer->m_Moderating && Server()->ClientIngame(ClientId);
+
+	char aBuf[500];
+		str_format(aBuf, sizeof(aBuf), "'%s' Has disconnected and left the server!", Server()->ClientName(pPlayer->GetCid()));
+		GameServer()->SendChatTarget(-1, aBuf);
 
 	IGameController::OnPlayerDisconnect(pPlayer, pReason);
 
