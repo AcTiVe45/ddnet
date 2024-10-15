@@ -1,0 +1,1589 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "testrunner.exe"
+		},
+		{
+			"path" : "testrunner.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"target_compile_options",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2996,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 3004,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3482,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3483,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3484,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3485,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3486,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3528,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3529,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 3530,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3584,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3565,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3596,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3551,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3534,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3538,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3540,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3535,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3541,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 3539,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 3546,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 3547,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 3548,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 3550,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob1 /DNDEBUG -std:c++17 -MTd -Zi"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/EHsc"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/GS"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/wd4996"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/utf-8"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "/wd4244"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "/wd4267"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "/wd4800"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 11,
+					"define" : "CONF_INFORM_UPDATE"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "CONF_VIDEORECORDER"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "GAME_RELEASE_VERSION=\"18.5.1\""
+				},
+				{
+					"backtrace" : 14,
+					"define" : "GLEW_STATIC"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "NOMINMAX"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "NTDDI_VERSION=0x06000000"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "UNICODE"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "_UNICODE"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "_WIN32_WINNT=0x0600"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 21,
+					"path" : "C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/src"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "C:/Users/MrXpi/Desktop/BlockMod/ddnet/src"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "C:/Users/MrXpi/Desktop/BlockMod/ddnet/src/rust-bridge"
+				},
+				{
+					"backtrace" : 24,
+					"isSystem" : true,
+					"path" : "C:/Users/MrXpi/Desktop/BlockMod/ddnet/ddnet-libs/curl/include"
+				},
+				{
+					"backtrace" : 24,
+					"isSystem" : true,
+					"path" : "C:/Users/MrXpi/Desktop/BlockMod/ddnet/ddnet-libs/sqlite3/include"
+				},
+				{
+					"backtrace" : 24,
+					"isSystem" : true,
+					"path" : "C:/Users/MrXpi/Desktop/BlockMod/ddnet/src/engine/external/zlib"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-src/googletest/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-src/googletest"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-src/googlemock/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-src/googlemock"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				38,
+				39,
+				40,
+				41,
+				42,
+				44,
+				46,
+				48,
+				50,
+				51,
+				53,
+				54,
+				55,
+				57,
+				59,
+				61
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "zlib::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "md5::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "engine-shared::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "json::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "game-shared::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "engine-gfx::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gmock::@645c719b6bb61ab77cfe"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest::@32fe1c6cd3a65a2fab56"
+		}
+	],
+	"id" : "testrunner::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob1 /DNDEBUG -MTd -Zi",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/machine:x64 /debug /INCREMENTAL /subsystem:console /SAFESEH:NO",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\Users\\MrXpi\\Desktop\\BlockMod\\ddnet\\ddnet-libs\\png\\windows\\lib64\\libpng16-16.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "lib\\gtest.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "lib\\gmock.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\Users\\MrXpi\\Desktop\\BlockMod\\ddnet\\ddnet-libs\\curl\\windows\\lib64\\curl.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "C:\\Users\\MrXpi\\Desktop\\BlockMod\\ddnet\\ddnet-libs\\sqlite3\\windows\\lib64\\sqlite3.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "shlwapi.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "version.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "ws2_32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "bcrypt.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "userenv.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "ole32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "shell32.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "ntdll.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "testrunner",
+	"nameOnDisk" : "testrunner.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "src\\test",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41
+			]
+		},
+		{
+			"name" : "src\\engine\\client",
+			"sourceIndexes" : 
+			[
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50
+			]
+		},
+		{
+			"name" : "src\\engine\\server\\databases",
+			"sourceIndexes" : 
+			[
+				51,
+				52,
+				53,
+				54
+			]
+		},
+		{
+			"name" : "src\\engine\\server",
+			"sourceIndexes" : 
+			[
+				55,
+				56,
+				57,
+				58
+			]
+		},
+		{
+			"name" : "src\\game\\server",
+			"sourceIndexes" : 
+			[
+				59,
+				60,
+				61,
+				62
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/aio.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/bezier.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/blocklist_driver.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/bytes_be.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/color.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/compression.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/csv.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/datafile.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/editor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/fs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/git_revision.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/hash.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/huffman.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/io.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/jobs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/json.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/jsonwriter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/linereader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/mapbugs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/math.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/memory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/name_ban.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/net.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/netaddr.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/os.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/packer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/prng.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/score.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/secure_random.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/serverbrowser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/serverinfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/snapshot.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/str.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/strip_path_and_extension.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/swap_endian.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/teehistorian.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/test/test.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/thread.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/timestamp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/unix.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/test/uuid.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/client/blocklist_driver.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/engine/client/blocklist_driver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/client/serverbrowser.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/engine/client/serverbrowser.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/client/serverbrowser_http.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/engine/client/serverbrowser_http.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/client/serverbrowser_ping_cache.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/engine/client/serverbrowser_ping_cache.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/client/sqlite.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/server/databases/connection.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/engine/server/databases/connection.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/server/databases/sqlite.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/server/databases/mysql.cpp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/server/name_ban.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/engine/server/name_ban.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/server/sql_string_helpers.cpp",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/engine/server/sql_string_helpers.h",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/game/server/teehistorian.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/game/server/teehistorian.h",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/game/server/scoreworker.cpp",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/game/server/scoreworker.h",
+			"sourceGroupIndex" : 4
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-gfx.dir/src/engine/gfx/image.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-gfx.dir/src/engine/gfx/image_loader.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-gfx.dir/src/engine/gfx/image_manipulation.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/assertion_logger.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/compression.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/config.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/console.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/csv.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/datafile.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/demo.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/econ.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/engine.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/fifo.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/filecollection.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/global_uuid_manager.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/host_lookup.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/http.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/huffman.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/jobs.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/json.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/jsonwriter.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/kernel.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/linereader.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/map.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/masterserver.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/memheap.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/netban.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/network.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/network_client.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/network_conn.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/network_console.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/network_console_conn.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/network_server.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/network_stun.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/packer.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/protocol_ex.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/protocolglue.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/ringbuffer.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/serverinfo.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/sixup_translate_snapshot.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/snapshot.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/storage.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/stun.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/teehistorian_ex.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/translation_context.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/uuid_manager.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/video.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/engine/shared/websockets.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/game/generated/protocolglue.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/game/generated/protocol7.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/game/generated/protocol.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/game/mapitems_ex.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/base/bezier.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/base/color.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/base/hash.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/base/hash_bundled.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/base/hash_libtomcrypt.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/base/hash_openssl.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/base/log.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/base/system.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/base/unicode/confusables.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/engine-shared.dir/src/base/unicode/tolower.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/game-shared.dir/src/game/collision.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/game-shared.dir/src/game/gamecore.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/game-shared.dir/src/game/layers.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/game-shared.dir/src/game/localization.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/game-shared.dir/src/game/mapbugs.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/game-shared.dir/src/game/mapitems.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/game-shared.dir/src/game/prng.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/game-shared.dir/src/game/teamscore.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/game-shared.dir/src/game/generated/git_revision.cpp.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/json.dir/src/engine/external/json-parser/json.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/md5.dir/src/engine/external/md5/md5.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/adler32.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/compress.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/crc32.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/deflate.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/gzclose.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/gzlib.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/gzread.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/gzwrite.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/infback.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/inffast.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/inflate.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/inftrees.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/trees.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/uncompr.c.obj",
+			"sourceGroupIndex" : 5
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "out/build/x64-Release/CMakeFiles/zlib.dir/src/engine/external/zlib/zutil.c.obj",
+			"sourceGroupIndex" : 5
+		}
+	],
+	"type" : "EXECUTABLE"
+}

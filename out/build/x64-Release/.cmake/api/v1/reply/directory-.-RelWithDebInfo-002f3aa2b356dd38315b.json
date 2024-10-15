@@ -1,0 +1,1770 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3262,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3264,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3267,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3270,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3275,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3277,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3281,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3284,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3281,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3284,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3281,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3284,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3281,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3284,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3288,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3296,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3297,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3299,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "data",
+			"destination" : "share/ddnet",
+			"paths" : 
+			[
+				"data"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "client",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"DDNet.exe"
+			],
+			"targetId" : "game-client::@6890427a1f51a3e7e1df",
+			"targetIndex" : 9,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "client",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "game-client::@6890427a1f51a3e7e1df",
+				"index" : 9
+			},
+			"destination" : "bin",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "client",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"steam_api.lib"
+			],
+			"targetId" : "steam_api::@6890427a1f51a3e7e1df",
+			"targetIndex" : 41,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "client",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"steam_api.dll"
+			],
+			"targetId" : "steam_api::@6890427a1f51a3e7e1df",
+			"targetIndex" : 41,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "client",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "steam_api::@6890427a1f51a3e7e1df",
+				"index" : 41
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "server",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"DDNet-Server.exe"
+			],
+			"targetId" : "game-server::@6890427a1f51a3e7e1df",
+			"targetIndex" : 10,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "server",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "game-server::@6890427a1f51a3e7e1df",
+				"index" : 10
+			},
+			"destination" : "bin",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"config_retrieve.exe"
+			],
+			"targetId" : "config_retrieve::@6890427a1f51a3e7e1df",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "config_retrieve::@6890427a1f51a3e7e1df",
+				"index" : 0
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"config_store.exe"
+			],
+			"targetId" : "config_store::@6890427a1f51a3e7e1df",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "config_store::@6890427a1f51a3e7e1df",
+				"index" : 1
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"crapnet.exe"
+			],
+			"targetId" : "crapnet::@6890427a1f51a3e7e1df",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "crapnet::@6890427a1f51a3e7e1df",
+				"index" : 2
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"demo_extract_chat.exe"
+			],
+			"targetId" : "demo_extract_chat::@6890427a1f51a3e7e1df",
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "demo_extract_chat::@6890427a1f51a3e7e1df",
+				"index" : 3
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"dilate.exe"
+			],
+			"targetId" : "dilate::@6890427a1f51a3e7e1df",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "dilate::@6890427a1f51a3e7e1df",
+				"index" : 4
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"dummy_map.exe"
+			],
+			"targetId" : "dummy_map::@6890427a1f51a3e7e1df",
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "dummy_map::@6890427a1f51a3e7e1df",
+				"index" : 5
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"map_convert_07.exe"
+			],
+			"targetId" : "map_convert_07::@6890427a1f51a3e7e1df",
+			"targetIndex" : 18,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "map_convert_07::@6890427a1f51a3e7e1df",
+				"index" : 18
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"map_create_pixelart.exe"
+			],
+			"targetId" : "map_create_pixelart::@6890427a1f51a3e7e1df",
+			"targetIndex" : 19,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "map_create_pixelart::@6890427a1f51a3e7e1df",
+				"index" : 19
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"map_diff.exe"
+			],
+			"targetId" : "map_diff::@6890427a1f51a3e7e1df",
+			"targetIndex" : 20,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "map_diff::@6890427a1f51a3e7e1df",
+				"index" : 20
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"map_extract.exe"
+			],
+			"targetId" : "map_extract::@6890427a1f51a3e7e1df",
+			"targetIndex" : 21,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "map_extract::@6890427a1f51a3e7e1df",
+				"index" : 21
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"map_find_env.exe"
+			],
+			"targetId" : "map_find_env::@6890427a1f51a3e7e1df",
+			"targetIndex" : 22,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "map_find_env::@6890427a1f51a3e7e1df",
+				"index" : 22
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"map_optimize.exe"
+			],
+			"targetId" : "map_optimize::@6890427a1f51a3e7e1df",
+			"targetIndex" : 23,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "map_optimize::@6890427a1f51a3e7e1df",
+				"index" : 23
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"map_replace_area.exe"
+			],
+			"targetId" : "map_replace_area::@6890427a1f51a3e7e1df",
+			"targetIndex" : 24,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "map_replace_area::@6890427a1f51a3e7e1df",
+				"index" : 24
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"map_replace_image.exe"
+			],
+			"targetId" : "map_replace_image::@6890427a1f51a3e7e1df",
+			"targetIndex" : 25,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "map_replace_image::@6890427a1f51a3e7e1df",
+				"index" : 25
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"map_resave.exe"
+			],
+			"targetId" : "map_resave::@6890427a1f51a3e7e1df",
+			"targetIndex" : 26,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "map_resave::@6890427a1f51a3e7e1df",
+				"index" : 26
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"packetgen.exe"
+			],
+			"targetId" : "packetgen::@6890427a1f51a3e7e1df",
+			"targetIndex" : 33,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "packetgen::@6890427a1f51a3e7e1df",
+				"index" : 33
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"stun.exe"
+			],
+			"targetId" : "stun::@6890427a1f51a3e7e1df",
+			"targetIndex" : 42,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "stun::@6890427a1f51a3e7e1df",
+				"index" : 42
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"twping.exe"
+			],
+			"targetId" : "twping::@6890427a1f51a3e7e1df",
+			"targetIndex" : 45,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "twping::@6890427a1f51a3e7e1df",
+				"index" : 45
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"unicode_confusables.exe"
+			],
+			"targetId" : "unicode_confusables::@6890427a1f51a3e7e1df",
+			"targetIndex" : 46,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "unicode_confusables::@6890427a1f51a3e7e1df",
+				"index" : 46
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"destination" : "lib/ddnet",
+			"paths" : 
+			[
+				"uuid.exe"
+			],
+			"targetId" : "uuid::@6890427a1f51a3e7e1df",
+			"targetIndex" : 47,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "tools",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "uuid::@6890427a1f51a3e7e1df",
+				"index" : 47
+			},
+			"destination" : "lib/ddnet",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "client",
+			"destination" : "share/applications",
+			"paths" : 
+			[
+				"other/ddnet.desktop"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "client",
+			"destination" : "share/icons/hicolor/16x16/apps",
+			"paths" : 
+			[
+				{
+					"from" : "other/icons/DDNet_16x16x32.png",
+					"to" : "ddnet.png"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "server",
+			"destination" : "share/icons/hicolor/16x16/apps",
+			"paths" : 
+			[
+				{
+					"from" : "other/icons/DDNet-Server_16x16x32.png",
+					"to" : "ddnet-server.png"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 9,
+			"component" : "client",
+			"destination" : "share/icons/hicolor/32x32/apps",
+			"paths" : 
+			[
+				{
+					"from" : "other/icons/DDNet_32x32x32.png",
+					"to" : "ddnet.png"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "server",
+			"destination" : "share/icons/hicolor/32x32/apps",
+			"paths" : 
+			[
+				{
+					"from" : "other/icons/DDNet-Server_32x32x32.png",
+					"to" : "ddnet-server.png"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 11,
+			"component" : "client",
+			"destination" : "share/icons/hicolor/48x48/apps",
+			"paths" : 
+			[
+				{
+					"from" : "other/icons/DDNet_48x48x32.png",
+					"to" : "ddnet.png"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 12,
+			"component" : "server",
+			"destination" : "share/icons/hicolor/48x48/apps",
+			"paths" : 
+			[
+				{
+					"from" : "other/icons/DDNet-Server_48x48x32.png",
+					"to" : "ddnet-server.png"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 13,
+			"component" : "client",
+			"destination" : "share/icons/hicolor/256x256/apps",
+			"paths" : 
+			[
+				{
+					"from" : "other/icons/DDNet_256x256x32.png",
+					"to" : "ddnet.png"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "server",
+			"destination" : "share/icons/hicolor/256x256/apps",
+			"paths" : 
+			[
+				{
+					"from" : "other/icons/DDNet-Server_256x256x32.png",
+					"to" : "ddnet-server.png"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/prim.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/prim_textured.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 17,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/prim.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 18,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/prim_textured.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/prim3d.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 20,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/prim3d_textured.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 21,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/prim3d.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 22,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/prim3d_textured.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 23,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/text.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 24,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/text.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 25,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/primex.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 26,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/primex.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 27,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/primex_rotationless.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 28,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/primex_rotationless.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 29,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/primex_tex.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 30,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/primex_tex.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 31,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/primex_tex_rotationless.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 32,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/primex_tex_rotationless.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 33,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/spritemulti.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 34,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/spritemulti.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 35,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/spritemulti_push.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 36,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/spritemulti_push.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 37,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/tile.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 38,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/tile.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 39,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/tile_textured.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 40,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/tile_textured.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 41,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/tile_border.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 42,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/tile_border.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 43,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/tile_border_textured.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 44,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/tile_border_textured.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 45,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/quad.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 46,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/quad.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 47,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/quad_push.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 48,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/quad_push.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 49,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/quad_textured.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 50,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/quad_textured.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 51,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/quad_push_textured.frag.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 52,
+			"component" : "client",
+			"destination" : "share/ddnet/data/shader/vulkan",
+			"paths" : 
+			[
+				"out/build/x64-Release/data/shader/vulkan/quad_push_textured.vert.spv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"DDNet.exe"
+			],
+			"targetId" : "game-client::@6890427a1f51a3e7e1df",
+			"targetIndex" : 9,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "game-client::@6890427a1f51a3e7e1df",
+				"index" : 9
+			},
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"DDNet-Server.exe"
+			],
+			"targetId" : "game-server::@6890427a1f51a3e7e1df",
+			"targetIndex" : 10,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "game-server::@6890427a1f51a3e7e1df",
+				"index" : 10
+			},
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"config_retrieve.exe"
+			],
+			"targetId" : "config_retrieve::@6890427a1f51a3e7e1df",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "config_retrieve::@6890427a1f51a3e7e1df",
+				"index" : 0
+			},
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"config_store.exe"
+			],
+			"targetId" : "config_store::@6890427a1f51a3e7e1df",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "config_store::@6890427a1f51a3e7e1df",
+				"index" : 1
+			},
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"demo_extract_chat.exe"
+			],
+			"targetId" : "demo_extract_chat::@6890427a1f51a3e7e1df",
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "demo_extract_chat::@6890427a1f51a3e7e1df",
+				"index" : 3
+			},
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"dilate.exe"
+			],
+			"targetId" : "dilate::@6890427a1f51a3e7e1df",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "dilate::@6890427a1f51a3e7e1df",
+				"index" : 4
+			},
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"map_convert_07.exe"
+			],
+			"targetId" : "map_convert_07::@6890427a1f51a3e7e1df",
+			"targetIndex" : 18,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "map_convert_07::@6890427a1f51a3e7e1df",
+				"index" : 18
+			},
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"map_create_pixelart.exe"
+			],
+			"targetId" : "map_create_pixelart::@6890427a1f51a3e7e1df",
+			"targetIndex" : 19,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "map_create_pixelart::@6890427a1f51a3e7e1df",
+				"index" : 19
+			},
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"map_diff.exe"
+			],
+			"targetId" : "map_diff::@6890427a1f51a3e7e1df",
+			"targetIndex" : 20,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "map_diff::@6890427a1f51a3e7e1df",
+				"index" : 20
+			},
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"map_extract.exe"
+			],
+			"targetId" : "map_extract::@6890427a1f51a3e7e1df",
+			"targetIndex" : 21,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "map_extract::@6890427a1f51a3e7e1df",
+				"index" : 21
+			},
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"steam_api.lib"
+			],
+			"targetId" : "steam_api::@6890427a1f51a3e7e1df",
+			"targetIndex" : 41,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"steam_api.dll"
+			],
+			"targetId" : "steam_api::@6890427a1f51a3e7e1df",
+			"targetIndex" : 41,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "portable",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "steam_api::@6890427a1f51a3e7e1df",
+				"index" : 41
+			},
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 54,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"data"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 55,
+			"component" : "portable",
+			"destination" : "DDNet-18.5.1-win64",
+			"isExcludeFromAll" : true,
+			"paths" : 
+			[
+				"license.txt",
+				"storage.cfg",
+				"ddnet-libs/curl/windows/lib64/libcurl.dll",
+				"ddnet-libs/curl/windows/lib64/zlib1.dll",
+				"ddnet-libs/freetype/windows/lib64/libfreetype.dll",
+				"ddnet-libs/opus/windows/lib64/libogg.dll",
+				"ddnet-libs/opus/windows/lib64/libopus.dll",
+				"ddnet-libs/opus/windows/lib64/libopusfile.dll",
+				"ddnet-libs/opus/windows/lib64/libwinpthread-1.dll",
+				"ddnet-libs/png/windows/lib64/libpng16-16.dll",
+				"ddnet-libs/sdl/windows/lib64/SDL2.dll",
+				"ddnet-libs/sqlite3/windows/lib64/sqlite3.dll",
+				"ddnet-libs/ffmpeg/windows/lib64/avcodec-61.dll",
+				"ddnet-libs/ffmpeg/windows/lib64/avformat-61.dll",
+				"ddnet-libs/ffmpeg/windows/lib64/avutil-59.dll",
+				"ddnet-libs/ffmpeg/windows/lib64/swresample-5.dll",
+				"ddnet-libs/ffmpeg/windows/lib64/swscale-8.dll",
+				"ddnet-libs/vulkan/windows/lib64/vulkan-1.dll",
+				"other/config_directory.bat",
+				"data/shader/vulkan/prim.frag.spv",
+				"data/shader/vulkan/prim_textured.frag.spv",
+				"data/shader/vulkan/prim.vert.spv",
+				"data/shader/vulkan/prim_textured.vert.spv",
+				"data/shader/vulkan/prim3d.frag.spv",
+				"data/shader/vulkan/prim3d_textured.frag.spv",
+				"data/shader/vulkan/prim3d.vert.spv",
+				"data/shader/vulkan/prim3d_textured.vert.spv",
+				"data/shader/vulkan/text.frag.spv",
+				"data/shader/vulkan/text.vert.spv",
+				"data/shader/vulkan/primex.frag.spv",
+				"data/shader/vulkan/primex.vert.spv",
+				"data/shader/vulkan/primex_rotationless.frag.spv",
+				"data/shader/vulkan/primex_rotationless.vert.spv",
+				"data/shader/vulkan/primex_tex.frag.spv",
+				"data/shader/vulkan/primex_tex.vert.spv",
+				"data/shader/vulkan/primex_tex_rotationless.frag.spv",
+				"data/shader/vulkan/primex_tex_rotationless.vert.spv",
+				"data/shader/vulkan/spritemulti.frag.spv",
+				"data/shader/vulkan/spritemulti.vert.spv",
+				"data/shader/vulkan/spritemulti_push.frag.spv",
+				"data/shader/vulkan/spritemulti_push.vert.spv",
+				"data/shader/vulkan/tile.frag.spv",
+				"data/shader/vulkan/tile.vert.spv",
+				"data/shader/vulkan/tile_textured.frag.spv",
+				"data/shader/vulkan/tile_textured.vert.spv",
+				"data/shader/vulkan/tile_border.frag.spv",
+				"data/shader/vulkan/tile_border.vert.spv",
+				"data/shader/vulkan/tile_border_textured.frag.spv",
+				"data/shader/vulkan/tile_border_textured.vert.spv",
+				"data/shader/vulkan/quad.frag.spv",
+				"data/shader/vulkan/quad.vert.spv",
+				"data/shader/vulkan/quad_push.frag.spv",
+				"data/shader/vulkan/quad_push.vert.spv",
+				"data/shader/vulkan/quad_textured.frag.spv",
+				"data/shader/vulkan/quad_textured.vert.spv",
+				"data/shader/vulkan/quad_push_textured.frag.spv",
+				"data/shader/vulkan/quad_push_textured.vert.spv"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

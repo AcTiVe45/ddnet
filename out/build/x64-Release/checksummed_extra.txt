@@ -1,0 +1,22 @@
+3.29.5-msvc4
+18.5.1
+64
+x86_64
+Windows
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+OFF
+OFF
+ON
+ON
+ON
+OFF
+OFF
+OFF
+OFF
+RelWithDebInfo
+E:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe

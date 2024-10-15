@@ -1,0 +1,49 @@
+TARGET = Some("x86_64-pc-windows-msvc")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-pc-windows-msvc")
+CXX_x86_64-pc-windows-msvc = None
+CXX_x86_64_pc_windows_msvc = None
+HOST_CXX = None
+CXX = None
+CXXFLAGS_x86_64-pc-windows-msvc = None
+CXXFLAGS_x86_64_pc_windows_msvc = None
+HOST_CXXFLAGS = None
+CXXFLAGS = Some("/MTd")
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("cmpxchg16b,crt-static,fxsr,sse,sse2,sse3")
+DEBUG = Some("true")
+CXX_x86_64-pc-windows-msvc = None
+CXX_x86_64_pc_windows_msvc = None
+HOST_CXX = None
+CXX = None
+CXXFLAGS_x86_64-pc-windows-msvc = None
+CXXFLAGS_x86_64_pc_windows_msvc = None
+HOST_CXXFLAGS = None
+CXXFLAGS = Some("/MTd")
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("cmpxchg16b,crt-static,fxsr,sse,sse2,sse3")
+running: "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MT" "-Z7" "-Brepro" "/MTd" "-FoC:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Debug\\debug\\build\\cxx-339be5a56510b9b0\\out\\src/cxx.o" "-c" "src/cxx.cc"
+cargo:warning=cl : Command line warning D9025 : overriding '/MT' with '/MTd'
+cxx.cc
+E:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\ostream(557): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+E:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\ostream(557): note: the template instantiation context (the oldest one first) is
+src/cxx.cc(288): note: see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
+E:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\ostream(549): note: while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::write(const _Elem *,std::streamsize)'
+        with
+        [
+            _Elem=char
+        ]
+src/cxx.cc(288): note: see the first reference to 'std::basic_ostream<char,std::char_traits<char>>::write' in 'rust::cxxbridge1::operator <<'
+exit code: 0
+AR_x86_64-pc-windows-msvc = None
+AR_x86_64_pc_windows_msvc = None
+HOST_AR = None
+AR = None
+running: "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\lib.exe" "-out:C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Debug\\debug\\build\\cxx-339be5a56510b9b0\\out\\libcxxbridge1.a" "-nologo" "C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Debug\\debug\\build\\cxx-339be5a56510b9b0\\out\\src/cxx.o"
+exit code: 0
+cargo:rustc-link-lib=static=cxxbridge1
+cargo:rustc-link-search=native=C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Debug\debug\build\cxx-339be5a56510b9b0\out
+cargo:rerun-if-changed=src/cxx.cc
+cargo:rerun-if-changed=include/cxx.h
+cargo:rustc-cfg=built_with_cargo
+cargo:HEADER=C:\Users\MrXpi\.cargo\registry\src\index.crates.io-6f17d22bba15001f\cxx-1.0.71\include\cxx.h

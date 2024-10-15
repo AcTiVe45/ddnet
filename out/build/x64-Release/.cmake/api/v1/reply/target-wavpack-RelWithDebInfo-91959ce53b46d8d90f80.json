@@ -1,0 +1,209 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "CMakeFiles/wavpack.dir/./src/engine/external/wavpack/bits.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/wavpack.dir/./src/engine/external/wavpack/float.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/wavpack.dir/./src/engine/external/wavpack/metadata.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/wavpack.dir/./src/engine/external/wavpack/unpack.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/wavpack.dir/./src/engine/external/wavpack/words.c.obj"
+		},
+		{
+			"path" : "CMakeFiles/wavpack.dir/./src/engine/external/wavpack/wputils.c.obj"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"find_package",
+			"target_compile_options"
+		],
+		"files" : 
+		[
+			"cmake/FindWavpack.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 542,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 3482,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 3483,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 3484,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 3485,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 3486,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 3605,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /O2 /Ob1 /DNDEBUG -MTd -Zi"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "/MP"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "/EHsc"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "/GS"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "/wd4996"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "/utf-8"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "/W0"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				5,
+				6
+			]
+		}
+	],
+	"id" : "wavpack::@6890427a1f51a3e7e1df",
+	"name" : "wavpack",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "src\\engine\\external\\wavpack",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/external/wavpack/bits.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/external/wavpack/float.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/external/wavpack/metadata.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/external/wavpack/unpack.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "src/engine/external/wavpack/wavpack.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/external/wavpack/words.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "src/engine/external/wavpack/wputils.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

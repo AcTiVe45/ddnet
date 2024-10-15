@@ -1,0 +1,30 @@
+TARGET = Some("x86_64-pc-windows-msvc")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-pc-windows-msvc")
+CXX_x86_64-pc-windows-msvc = None
+CXX_x86_64_pc_windows_msvc = None
+HOST_CXX = None
+CXX = None
+CXXFLAGS_x86_64-pc-windows-msvc = None
+CXXFLAGS_x86_64_pc_windows_msvc = None
+HOST_CXXFLAGS = None
+CXXFLAGS = Some("/MTd")
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("cmpxchg16b,crt-static,fxsr,sse,sse2,sse3")
+DEBUG = Some("true")
+running: "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MT" "-Z7" "-Brepro" "/MTd" "-FoC:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Debug\\debug\\build\\link-cplusplus-5f3c25e889b4f7ef\\out\\dummy.o" "-c" "C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Debug\\debug\\build\\link-cplusplus-5f3c25e889b4f7ef\\out\\dummy.cc"
+cargo:warning=cl : Command line warning D9025 : overriding '/MT' with '/MTd'
+dummy.cc
+exit code: 0
+AR_x86_64-pc-windows-msvc = None
+AR_x86_64_pc_windows_msvc = None
+HOST_AR = None
+AR = None
+running: "E:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\lib.exe" "-out:C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Debug\\debug\\build\\link-cplusplus-5f3c25e889b4f7ef\\out\\liblink-cplusplus.a" "-nologo" "C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Debug\\debug\\build\\link-cplusplus-5f3c25e889b4f7ef\\out\\dummy.o"
+exit code: 0
+cargo:rustc-link-lib=static=link-cplusplus
+cargo:rustc-link-search=native=C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Debug\debug\build\link-cplusplus-5f3c25e889b4f7ef\out
+CXXSTDLIB_x86_64-pc-windows-msvc = None
+CXXSTDLIB_x86_64_pc_windows_msvc = None
+HOST_CXXSTDLIB = None
+CXXSTDLIB = None

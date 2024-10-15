@@ -1,0 +1,1 @@
+const char *GIT_SHORTREV_HASH = "9298ee485e6e1180";

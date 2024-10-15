@@ -1,0 +1,1 @@
+C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Debug\debug\libddnet_test.rlib: C:\Users\MrXpi\Desktop\BlockMod\ddnet\src\rust-bridge\test\build.rs C:\Users\MrXpi\Desktop\BlockMod\ddnet\src\rust-bridge\test\lib.rs

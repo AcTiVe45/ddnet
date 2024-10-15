@@ -1,0 +1,21 @@
+# ninja log v5
+4	180	7492574243578050	googletest-prefix/src/googletest-stamp/googletest-mkdir	104cd89e74fcbfb
+4	180	7492574243578050	C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-download/googletest-prefix/src/googletest-stamp/googletest-mkdir	104cd89e74fcbfb
+182	23380	7492574475516821	googletest-prefix/src/googletest-stamp/googletest-download	4b350798e11c70fc
+182	23380	7492574475516821	C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-download/googletest-prefix/src/googletest-stamp/googletest-download	4b350798e11c70fc
+23381	23847	0	googletest-prefix/src/googletest-stamp/googletest-update	97c03c79782d0164
+23381	23847	0	C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-download/googletest-prefix/src/googletest-stamp/googletest-update	97c03c79782d0164
+23848	24015	7492574481886125	googletest-prefix/src/googletest-stamp/googletest-patch	301cad140ceb000
+23848	24015	7492574481886125	C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-download/googletest-prefix/src/googletest-stamp/googletest-patch	301cad140ceb000
+24015	24196	7492574483675084	googletest-prefix/src/googletest-stamp/googletest-configure	6ef009ef91e82760
+24015	24196	7492574483675084	C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-download/googletest-prefix/src/googletest-stamp/googletest-configure	6ef009ef91e82760
+24196	24393	7492574485653947	googletest-prefix/src/googletest-stamp/googletest-build	ff82d932087b323a
+24196	24393	7492574485653947	C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-download/googletest-prefix/src/googletest-stamp/googletest-build	ff82d932087b323a
+24394	24547	7492574487223040	googletest-prefix/src/googletest-stamp/googletest-install	727700cbe3b38eed
+24394	24547	7492574487223040	C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-download/googletest-prefix/src/googletest-stamp/googletest-install	727700cbe3b38eed
+24548	24702	7492574488772159	googletest-prefix/src/googletest-stamp/googletest-test	36514766601fbba0
+24548	24702	7492574488772159	C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-download/googletest-prefix/src/googletest-stamp/googletest-test	36514766601fbba0
+24703	24901	7492574490781004	CMakeFiles/googletest-complete	895325093a9c4bf1
+24703	24901	7492574490781004	googletest-prefix/src/googletest-stamp/googletest-done	895325093a9c4bf1
+24703	24901	7492574490781004	C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-download/CMakeFiles/googletest-complete	895325093a9c4bf1
+24703	24901	7492574490781004	C:/Users/MrXpi/Desktop/BlockMod/ddnet/out/build/x64-Release/googletest-download/googletest-prefix/src/googletest-stamp/googletest-done	895325093a9c4bf1
